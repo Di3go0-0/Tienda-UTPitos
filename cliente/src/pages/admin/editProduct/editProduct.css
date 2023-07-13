@@ -1,0 +1,171 @@
+/* Estilos generales */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: url('https://e1.pxfuel.com/desktop-wallpaper/616/918/desktop-wallpaper-deer-digtial-vector-art-forest-vector.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+/* Estilos para EditProduct */
+.shop {
+  padding: 20px;
+}
+
+.register-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: auto;
+  background-color: rgba(128, 0, 128, 0.5);
+  border: 2px solid grey;
+  border-radius: 20px;
+  box-shadow: 0 0 30px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.register-form h2 {
+  padding: 10%;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #fff;
+}
+
+.register-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.register-form input {
+  width: 100%;
+  height: 40px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #162938;
+  transition: border-color 0.3s;
+  font-weight: bold;
+  padding: 5px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.register-form input:focus {
+  border-bottom-color: #59daeb;
+}
+
+.register-form .btn-login {
+  width: 100%;
+  height: 45px;
+  background: #162938;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  color: #fff;
+  font-weight: bold;
+  margin: 10px;
+}
+
+/* Estilos para Product */
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  height: 400px;
+  background-color: rgba(128, 0, 128, 0.5);
+  border: 2px solid grey;
+  border-radius: 20px;
+  box-shadow: 0 0 30px black;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.product .slide-var {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.product .slide-var ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.product .slide-var ul li {
+  margin-right: 10px;
+}
+
+.product .slide-var ul li img {
+  width: 100px;
+  height: 100px;
+}
+
+.product .description p {
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.product .description form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product .description input {
+  width: 100%;
+  height: 40px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #162938;
+  transition: border-color 0.3s;
+  font-weight: bold;
+  padding: 5px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.product .description input:focus {
+  border-bottom-color: #59daeb;
+}
+
+.product .description .btn-login {
+  width: 100%;
+  height: 45px;
+  background: #162938;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  color: #fff;
+  font-weight: bold;
+  margin: 10px;
+}
