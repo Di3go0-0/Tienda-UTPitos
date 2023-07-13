@@ -3,26 +3,23 @@ const striper = Stripe('sk_test_51MXhMwE3qnA4gieV1zddEIRQEaSU2Ro4yVhovCZZGzuLKMv
 
 //funcion que permite conectarse a la api y realizar los pagos
 export const pay = async (req,res) => {
-    let {amount, id} = req.body
-    try {
-        const payment = await striper.paymentIntents.create({
-            amount,
-            currency: 'COP',
-            description: 'shop',
-            payment_method: id,
-            confirm: true
-        })
-
-        console.log('payment', payment);
+    let {id, amount, description} = req.body;
+    striper.paymentIntents.create({
+        amount: amount * 100,
+        description: description,
+        currency: 'cop',
+        payment_method: id,
+        confirm: true
+    }).then((pay) => {
         res.json({
             message: 'payment succesful',
-            succes: true
+            success: true
         })
-    } catch (error) {
+    }).catch((error) => {
         console.log('error', error);
         res.json({
             message:'payment failed',
-            succes: false
+            success: false
         })
-    }
+    })
 }

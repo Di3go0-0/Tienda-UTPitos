@@ -45,4 +45,3 @@ products.forEach(product => {
 });
 console.log(productMinStock);
 export {productsStock, productMinStock};//exportation de los objetos
-

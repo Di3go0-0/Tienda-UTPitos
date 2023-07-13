@@ -1,5 +1,4 @@
 //importamos el modelo
-
 import ProductModel from "../models/ProductModel.js";
 import { productsStock, productMinStock } from "../main.js";
 import { sendMail } from "../mail/mail.js";
@@ -96,7 +95,7 @@ const updateContent = async (product, quantity) => {
         where: {id: product}
     })
     if (productMinStock[product].stockMin >= (stock[0].dataValues.stock - quantity[product])){
-        sendMail({id: product});
+        //sendMail({id: product});
     }
 }
 //Se compran los productos y se usa updatecontent para actualizar el contenido de cada uno
