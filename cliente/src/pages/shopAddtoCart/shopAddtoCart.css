@@ -118,28 +118,27 @@
 }
 
 .addToCartBttn {
-  min-width: 130px;
-  height: 40px;
-  color: #fff;
-  padding: 5px 10px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  position: relative;
-  display: inline-block;
-  outline: none;
-  border-radius: 5px;
-  border: none;
-  background-size: 120% auto;
-  background-image: linear-gradient(315deg, #000428 0%, #004e92 75%);
-/* Establece un borde redondeado de 15 píxeles */
+  min-width: 130px;  /* Establece el ancho mínimo del botón en 130 píxeles */
+  height: 40px;  /* Establece la altura del botón en 40 píxeles */
+  color: #fff;  /* Establece el color del texto en blanco */
+  padding: 5px 10px;  /* Establece el relleno interno del botón en 5 píxeles en la parte superior e inferior y 10 píxeles en los lados izquierdo y derecho */
+  font-weight: bold;  /* Establece el grosor de la fuente en negrita */
+  cursor: pointer;  /* Establece el cursor del mouse en un ícono de puntero */
+  transition: all 0.3s ease;  /* Establece una transición suave de todas las propiedades con una duración de 0.3 segundos */
+  position: relative;  /* Establece la posición del botón como relativa */
+  display: inline-block;  /* Hace que el botón se muestre como un elemento en línea */
+  outline: none;  /* Elimina el contorno del botón cuando se enfoca */
+  border-radius: 5px;  /* Establece un borde redondeado de 5 píxeles */
+  border: none;  /* Elimina el borde del botón */
+  background-size: 120% auto;  /* Establece el tamaño del fondo del botón al 120% del ancho y altura originales */
+  background-image: linear-gradient(315deg, #000428 0%, #004e92 75%);  /* Establece una imagen de fondo lineal en forma de gradiente */
 }
 
 .addToCartBttn:hover {
-  background-position: right center; /* Cambia el cursor del mouse a un ícono de puntero */
+  background-position: right center;  /* Cambia la posición del fondo del botón al centro-derecha al pasar el cursor sobre el botón */
+  /* Cambia el cursor del mouse a un ícono de puntero */
 }
 
 .addToCartBttn:active {
-  top: 2px;
+  top: 2px;  /* Desplaza el botón 2 píxeles hacia abajo al hacer clic en el botón */
 }
-
