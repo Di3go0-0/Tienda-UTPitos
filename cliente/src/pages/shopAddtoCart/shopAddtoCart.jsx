@@ -23,7 +23,7 @@ export const ShopAddtoCart = () => { // Exportamos el componente funcional ShopA
     return (
         <div className="shop">
             <div className="shopTitle">
-                <h1>Utepitos</h1>
+                <h1>Nouveautes</h1>
             </div>
             <div className="products"> 
                 {products.map((product) => ( // Para cada producto en el estado products, renderizamos el componente Product pasando los datos del producto como propiedades.

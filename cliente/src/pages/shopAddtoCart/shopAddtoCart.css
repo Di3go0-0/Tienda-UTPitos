@@ -102,8 +102,8 @@
 .product .description {
    /* word-wrap: break-word; Permite que las palabras se rompan y se ajusten al ancho del contenedor */
    text-align: center; /* Centra el texto horizontalmente dentro de su contenedor */
-   white-space: nowrap;
-   overflow: hidden;
+   /* white-space: nowrap;
+   overflow: hidden; */
    text-overflow: ellipsis;
 }
 
@@ -118,20 +118,28 @@
 }
 
 .addToCartBttn {
-  background-color: transparent; /* Establece el color de fondo transparente */
-  border: 2px solid rgb(255, 238, 3); /* Establece un borde sólido de 2 píxeles en color negro */
-  color: white;
-  min-width: 100px; /* Establece el ancho mínimo del botón en 100 píxeles */
-  padding-left: 10px; /* Agrega un relleno interno de 10 píxeles en el lado izquierdo del botón */
-  padding-right: 10px; /* Agrega un relleno interno de 10 píxeles en el lado derecho del botón */
-  padding-top: 5px; /* Agrega un relleno interno de 5 píxeles en la parte superior del botón */
-  padding-bottom: 5px; /* Agrega un relleno interno de 5 píxeles en la parte inferior del botón */
-  border-radius: 15px; /* Establece un borde redondeado de 15 píxeles */
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  background-size: 120% auto;
+  background-image: linear-gradient(315deg, #000428 0%, #004e92 75%);
+/* Establece un borde redondeado de 15 píxeles */
 }
 
 .addToCartBttn:hover {
-  background-color: rgb(255, 238, 3); /* Establece el color de fondo en negro al pasar el cursor sobre el botón */
-  color: rgb(255, 255, 255); /* Establece el color del texto en blanco */
-  cursor: pointer; /* Cambia el cursor del mouse a un ícono de puntero */
+  background-position: right center; /* Cambia el cursor del mouse a un ícono de puntero */
+}
+
+.addToCartBttn:active {
+  top: 2px;
 }
 
