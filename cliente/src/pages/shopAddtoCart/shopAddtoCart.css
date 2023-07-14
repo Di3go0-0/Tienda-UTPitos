@@ -36,7 +36,8 @@
 
 .product {
   width: 300px; /* Establece el ancho del producto en 250 píxeles */
-  height: max-content; /* Establece la altura del producto */
+  min-height: 600px; /* Establece la altura del producto */
+  max-height: max-content;
   display: block; /* Establece el producto como un bloque */
   justify-content: center; /* Centra horizontalmente los elementos dentro de su contenedor */
   align-items: center; /* Centra verticalmente los elementos dentro de su contenedor */
@@ -99,8 +100,11 @@
 }
 
 .product .description {
-  word-wrap: break-word; /* Permite que las palabras se rompan y se ajusten al ancho del contenedor */
-  text-align: center; /* Centra el texto horizontalmente dentro de su contenedor */
+   /* word-wrap: break-word; Permite que las palabras se rompan y se ajusten al ancho del contenedor */
+   text-align: center; /* Centra el texto horizontalmente dentro de su contenedor */
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
 }
 
 .product .descripcion {
