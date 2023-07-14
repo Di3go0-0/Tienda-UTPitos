@@ -5,29 +5,31 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 import "./editProduct.css"
 
-const URI = 'https://utpitosbackend.onrender.com/products/'; //aqui se hacen las peticiones
+const URI = 'https://utpitosbackend.onrender.com/products/'; // Aquí se especifica la URL para hacer las peticiones.
 
 export const EditProduct = () => {
+    const [products, setProducts] = useState([]); // Aquí se inicializa el estado para almacenar los productos.
 
-    const[products, setProducts] = useState([]) // aqui se guardan los productos
     useEffect(() => {
-        getProduct()
+        getProduct();
     }, []);
 
-    const getProduct = async () => {//aqui se hace la solicitud
-        const res = await axios.get(URI)
-        setProducts(res.data)
-    }
+    const getProduct = async () => { // Esta función hace una solicitud para obtener los productos desde la URL especificada.
+        const res = await axios.get(URI);
+        setProducts(res.data);
+    };
+
     return (
-        <div className="shop">
+        <div className="shop"> {/* Un contenedor con la clase CSS "shop" */}
             <div className="shopTitle">
-                <h1>Edit Products</h1>
+                <h1>Edit Products</h1> {/* Título para la sección de edición de productos */}
             </div>
-            <div className="products"> 
+            <div className="products">
+                {/* Se mapea el arreglo de productos y se renderiza un componente "Product" para cada uno */}
                 {products.map((product) => (
-                    <Product data={product} />// se muestran todos los productos que estan en el arreglo
+                    <Product data={product} />
                 ))}
             </div>
         </div>
-    )
+    );
 };

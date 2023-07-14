@@ -1,177 +1,177 @@
 /* Estilos para la sección EditProduct */
 .shop {
-  padding: 20px;
+  padding: 20px; /* Añade un espacio de 20 píxeles alrededor del elemento */
 }
 
 .register-form {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 400px;
-  height: auto;
-  background-color: rgba(128, 0, 128, 0.5);
-  border: 2px solid grey;
-  border-radius: 20px;
-  box-shadow: 0 0 30px black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
+  position: absolute; /* Establece la posición del elemento como absoluta */
+  top: 50%; /* Coloca el elemento en la mitad superior del padre */
+  left: 50%; /* Coloca el elemento en la mitad izquierda del padre */
+  transform: translate(-50%, -50%); /* Aplica una transformación para centrar el elemento en el padre */
+  width: 400px; /* Establece el ancho del elemento en 400 píxeles */
+  height: auto; /* Ajusta automáticamente la altura del elemento */
+  background-color: rgba(128, 0, 128, 0.5); /* Establece el color de fondo con transparencia */
+  border: 2px solid grey; /* Establece un borde de 2 píxeles sólido de color gris */
+  border-radius: 20px; /* Establece un radio de borde de 20 píxeles */
+  box-shadow: 0 0 30px black; /* Agrega una sombra al elemento */
+  display: flex; /* Establece el elemento como un contenedor flexible */
+  justify-content: center; /* Centra horizontalmente el contenido dentro del elemento */
+  align-items: center; /* Centra verticalmente el contenido dentro del elemento */
+  padding: 20px; /* Añade un espacio de 20 píxeles alrededor del elemento */
 }
 
 .register-form h2 {
-  padding: 10%;
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 10px;
-  text-align: center;
-  color: #fff;
+  padding: 10%; /* Añade un espacio de relleno alrededor del elemento */
+  font-size: 24px; /* Establece el tamaño de fuente en 24 píxeles */
+  font-weight: bold; /* Establece el peso de fuente en negrita */
+  margin-bottom: 10px; /* Añade un espacio inferior de 10 píxeles */
+  text-align: center; /* Centra el texto horizontalmente dentro del elemento */
+  color: #fff; /* Establece el color de texto en blanco */
 }
 
 .register-form form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 20px;
+  display: flex; /* Establece el elemento como un contenedor flexible */
+  flex-direction: column; /* Establece la dirección de los elementos secundarios como columna */
+  align-items: center; /* Centra verticalmente los elementos secundarios dentro del elemento */
+  margin-top: 20px; /* Añade un espacio superior de 20 píxeles */
 }
 
 .register-form input {
-  width: 100%;
-  height: 40px;
-  background: transparent;
-  border: none;
-  outline: none;
-  border-bottom: 2px solid #162938;
-  transition: border-color 0.3s;
-  font-weight: bold;
-  padding: 5px;
-  margin-bottom: 20px;
-  color: #fff;
+  width: 100%; /* Establece el ancho del elemento en 100% del contenedor padre */
+  height: 40px; /* Establece la altura del elemento en 40 píxeles */
+  background: transparent; /* Establece el fondo transparente */
+  border: none; /* Elimina el borde */
+  outline: none; /* Elimina el contorno al enfocar */
+  border-bottom: 2px solid #162938; /* Establece un borde inferior de 2 píxeles sólido de color #162938 */
+  transition: border-color 0.3s; /* Aplica una transición suave al color del borde */
+  font-weight: bold; /* Establece el peso de fuente en negrita */
+  padding: 5px; /* Añade un espacio de relleno de 5 píxeles */
+  margin-bottom: 20px; /* Añade un espacio inferior de 20 píxeles */
+  color: #fff; /* Establece el color de texto en blanco */
 }
 
 .register-form input:focus {
-  border-bottom-color: #59daeb;
+  border-bottom-color: #59daeb; /* Cambia el color del borde inferior al enfocar */
 }
 
 .register-form .btn-login {
-  width: 100%;
-  height: 45px;
-  background: #162938;
-  border: none;
-  outline: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 1em;
-  color: #fff;
-  font-weight: bold;
-  margin: 10px;
+  width: 100%; /* Establece el ancho del elemento en 100% del contenedor padre */
+  height: 45px; /* Establece la altura del elemento en 45 píxeles */
+  background: #162938; /* Establece el color de fondo */
+  border: none; /* Elimina el borde */
+  outline: none; /* Elimina el contorno al enfocar */
+  border-radius: 6px; /* Establece el radio de borde en 6 píxeles */
+  cursor: pointer; /* Cambia el cursor al pasar por encima del elemento */
+  font-size: 1em; /* Establece el tamaño de fuente en 1em */
+  color: #fff; /* Establece el color de texto en blanco */
+  font-weight: bold; /* Establece el peso de fuente en negrita */
+  margin: 10px; /* Añade un espacio exterior de 10 píxeles */
 }
 
 /* Estilos para la sección Product */
 .product {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  background-color: rgba(128, 0, 128, 0.5);
-  backdrop-filter: blur(5px);
-  border-radius: 8px;
-  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
+  display: flex; /* Establece el elemento como un contenedor flexible */
+  flex-direction: column; /* Establece la dirección de los elementos secundarios como columna */
+  align-items: center; /* Centra verticalmente los elementos secundarios dentro del elemento */
+  justify-content: center; /* Centra horizontalmente los elementos secundarios dentro del elemento */
+  padding: 20px; /* Añade un espacio de 20 píxeles alrededor del elemento */
+  background-color: rgba(128, 0, 128, 0.5); /* Establece el color de fondo con transparencia */
+  backdrop-filter: blur(5px); /* Aplica un desenfoque al fondo */
+  border-radius: 8px; /* Establece el radio de borde en 8 píxeles */
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1); /* Agrega una sombra al elemento */
+  margin-bottom: 20px; /* Añade un espacio inferior de 20 píxeles */
 }
 
 .slide-var {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 10px;
+  display: flex; /* Establece el elemento como un contenedor flexible */
+  justify-content: center; /* Centra horizontalmente los elementos secundarios dentro del elemento */
+  align-items: center; /* Centra verticalmente los elementos secundarios dentro del elemento */
+  margin-bottom: 10px; /* Añade un espacio inferior de 10 píxeles */
 }
 
 .slide-var ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+  list-style-type: none; /* Elimina los marcadores de lista */
+  padding: 0; /* Elimina el espacio interior */
+  margin: 0; /* Elimina el espacio exterior */
 }
 
 .slide-var ul li {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 10px;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  overflow: hidden;
-  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+  display: flex; /* Establece los elementos de la lista como elementos flexibles */
+  align-items: center; /* Centra verticalmente los elementos secundarios dentro del elemento */
+  justify-content: center; /* Centra horizontalmente los elementos secundarios dentro del elemento */
+  margin-right: 10px; /* Añade un espacio derecho de 10 píxeles */
+  width: 100px; /* Establece el ancho del elemento en 100 píxeles */
+  height: 100px; /* Establece la altura del elemento en 100 píxeles */
+  border-radius: 50%; /* Establece el radio de borde en 50% */
+  overflow: hidden; /* Oculta el contenido que excede las dimensiones del elemento */
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2); /* Agrega una sombra al elemento */
 }
 
 .slide-var ul li img {
-  width: auto;
-  height: 100%;
-  object-fit: contain;
+  width: auto; /* Ajusta automáticamente el ancho de la imagen */
+  height: 100%; /* Establece la altura de la imagen al 100% del elemento padre */
+  object-fit: contain; /* Escala la imagen para que quepa dentro del elemento */
 }
 
 .description {
-  text-align: center;
-  margin-bottom: 10px;
-  color: #fff;
+  text-align: center; /* Centra el texto horizontalmente dentro del elemento */
+  margin-bottom: 10px; /* Añade un espacio inferior de 10 píxeles */
+  color: #fff; /* Establece el color de texto en blanco */
 }
 
 .description p {
-  margin-bottom: 10px;
+  margin-bottom: 10px; /* Añade un espacio inferior de 10 píxeles */
 }
 
 .description b {
-  font-weight: bold;
+  font-weight: bold; /* Establece el peso de fuente en negrita */
 }
 
 .description input[type="text"] {
-  width: 100%;
-  height: 40px;
-  padding: 5px;
-  border: 2px solid #162938;
-  border-radius: 8px;
-  font-size: 16px;
-  margin-bottom: 10px;
-  background-color: #f1f1f1;
-  transition: border-color 0.3s;
-  color: #000;
+  width: 100%; /* Establece el ancho del elemento en 100% del contenedor padre */
+  height: 40px; /* Establece la altura del elemento en 40 píxeles */
+  padding: 5px; /* Añade un espacio de relleno de 5 píxeles */
+  border: 2px solid #162938; /* Establece un borde de 2 píxeles sólido de color #162938 */
+  border-radius: 8px; /* Establece el radio de borde en 8 píxeles */
+  font-size: 16px; /* Establece el tamaño de fuente en 16 píxeles */
+  margin-bottom: 10px; /* Añade un espacio inferior de 10 píxeles */
+  background-color: #f1f1f1; /* Establece el color de fondo */
+  transition: border-color 0.3s; /* Aplica una transición suave al color del borde */
+  color: #000; /* Establece el color de texto en negro */
 }
 
 .description input[type="text"]:focus {
-  outline: none;
-  border-color: #0597c2;
+  outline: none; /* Elimina el contorno al enfocar */
+  border-color: #0597c2; /* Cambia el color del borde al enfocar */
 }
 
 .description .btn-login {
-  background-color: #162938;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  height: 40px;
-  font-size: 16px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s;
+  background-color: #162938; /* Establece el color de fondo */
+  color: #fff; /* Establece el color de texto en blanco */
+  border: none; /* Elimina el borde */
+  border-radius: 4px; /* Establece el radio de borde en 4 píxeles */
+  height: 40px; /* Establece la altura del elemento en 40 píxeles */
+  font-size: 16px; /* Establece el tamaño de fuente en 16 píxeles */
+  font-weight: bold; /* Establece el peso de fuente en negrita */
+  cursor: pointer; /* Cambia el cursor al pasar por encima del elemento */
+  transition: background-color 0.3s; /* Aplica una transición suave al color de fondo */
 }
 
 .description .btn-login:hover {
-  background-color: #0597c2;
+  background-color: #0597c2; /* Cambia el color de fondo al pasar el cursor por encima */
 }
 
 @media only screen and (max-width: 600px) {
   .slide-var ul li {
-    width: 60px;
-    height: 60px;
+    width: 60px; /* Establece el ancho del elemento en 60 píxeles */
+    height: 60px; /* Establece la altura del elemento en 60 píxeles */
   }
 
   .description input[type="text"] {
-    height: 30px;
+    height: 30px; /* Establece la altura del elemento en 30 píxeles */
   }
 
   .description .btn-login {
-    height: 30px;
+    height: 30px; /* Establece la altura del elemento en 30 píxeles */
   }
 }
