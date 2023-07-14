@@ -1,12 +1,3 @@
-/* Modificaciones en estilos para el elemento 'body' */
-body {
-    margin: 0; /* Elimina el margen alrededor del cuerpo del documento */
-    padding: 0; /* Elimina el relleno alrededor del cuerpo del documento */
-    display: flex; /* Establece el modelo de caja como flexible */
-    background: url('https://e1.pxfuel.com/desktop-wallpaper/616/918/desktop-wallpaper-deer-digtial-vector-art-forest-vector.jpg') no-repeat; /* Establece una imagen de fondo y evita que se repita */
-    background-size: cover; /* Ajusta la imagen de fondo para cubrir todo el contenedor */
-  }
-  
   /* Estilos que se aplican al formulario de registro */
   .register-form {
     backdrop-filter: blur(20px); /* Agrega un efecto de desenfoque al fondo del formulario */

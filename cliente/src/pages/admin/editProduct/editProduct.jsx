@@ -3,6 +3,7 @@ import { Product } from './Product';
 import axios from 'axios';
 import { useState } from 'react';
 import { useEffect } from 'react';
+import "./editProduct.css"
 
 const URI = 'http://localhost:3001/products/'; //aqui se hacen las peticiones
 
