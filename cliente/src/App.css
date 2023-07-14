@@ -1,16 +1,17 @@
-.App {
-  width: 100vw;  /* Establece el ancho de la página al 100% del ancho de la ventana */
-  height: auto;  /* Establece la altura automáticamente en función del contenido */
-  min-height: 100vh;  /* Establece la altura mínima de la página al 100% de la altura de la ventana */
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;  /* Establece la fuente del texto */
+
+.App {/*se le da un tamaño a la pagina*/
+  width: 100vw;
+  height: auto;
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-body {
-  padding: 0;  /* Elimina el relleno interno del cuerpo */
-  margin: 0;  /* Elimina los márgenes externos del cuerpo */
-  background-image: url('https://static.vecteezy.com/system/resources/previews/007/745/387/original/vintage-seamless-pattern-fleur-de-lis-free-vector.jpg');  /* Establece una imagen de fondo para el cuerpo */
+body {/*se quita el padding y margin que vienen por defecto en la pagina*/
+  padding: 0;
+  margin: 0;
+  background-image:url('https://static.vecteezy.com/system/resources/previews/007/745/387/original/vintage-seamless-pattern-fleur-de-lis-free-vector.jpg');
   /* background-size: cover; */
   /* background-position: center center; */
   /* background-repeat: no-repeat; */
-  /* background-attachment: fixed; */
+  /* background-attachment:fixed; */
 }
