@@ -1,11 +1,11 @@
 .shopTitle {
-  margin-top: 100px; /* Establece un margen superior de 100 píxeles */
+  margin-top: 10px; /* Establece un margen superior de 100 píxeles */
   text-align: center; /* Centra el texto horizontalmente dentro de su contenedor */
   font-size: 1rem; /* Establece el tamaño de fuente en 40 píxeles */
 }
 
 .shop {
-  position: absolute;
+  position: relative;
   align-items: center; /* Centra verticalmente los elementos dentro de su contenedor */
   justify-content: center; /* Centra horizontalmente los elementos dentro de su contenedor */
   text-align: center; /* Centra el texto horizontalmente dentro de su contenedor */
@@ -31,13 +31,12 @@
   flex-wrap: wrap; /* Permite que los elementos se envuelvan en múltiples líneas dentro del contenedor */
   align-items: center; /* Centra verticalmente los elementos dentro de su contenedor */
   justify-content: center; /* Centra horizontalmente los elementos dentro de su contenedor */
-  --alt: 450px; /* Define una variable personalizada llamada "--alt" con un valor de 450 píxeles */
 }
 
 
 .product {
-  width: 250px; /* Establece el ancho del producto en 250 píxeles */
-  height: var(--alt); /* Establece la altura del producto usando la variable personalizada "--alt" */
+  width: 300px; /* Establece el ancho del producto en 250 píxeles */
+  height: max-content; /* Establece la altura del producto */
   display: block; /* Establece el producto como un bloque */
   justify-content: center; /* Centra horizontalmente los elementos dentro de su contenedor */
   align-items: center; /* Centra verticalmente los elementos dentro de su contenedor */
