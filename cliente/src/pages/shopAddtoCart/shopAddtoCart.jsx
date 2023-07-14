@@ -6,7 +6,7 @@ import { useState } from 'react'; // Importamos el hook useState de React
 import { useEffect } from 'react'; // Importamos el hook useEffect de React
 
 
-const URI = 'http://localhost:3001/products/'; // Definimos la URL de la API donde se obtienen los productos
+const URI = 'https://utpitosbackend.onrender.com/products/'; // Definimos la URL de la API donde se obtienen los productos
 
 export const ShopAddtoCart = () => { // Exportamos el componente funcional ShopAddtoCart como una constante.
 

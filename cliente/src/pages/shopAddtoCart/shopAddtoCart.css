@@ -117,6 +117,11 @@
   transform: scale(1.05); /* Escala el producto al 105% en el estado de desplazamiento */
 }
 
+.package{
+  text-align: center;
+  align-items: center;
+}
+
 .addToCartBttn {
   min-width: 130px;  /* Establece el ancho mínimo del botón en 130 píxeles */
   height: 40px;  /* Establece la altura del botón en 40 píxeles */

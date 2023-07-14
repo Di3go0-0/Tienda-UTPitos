@@ -6,7 +6,7 @@ import { useState, useEffect } from "react";
 import { ShopContext } from "../../context/shop-context";//se importa el contexto
 import { useContext } from "react";
 
-const URI = 'http://localhost:3001/users/';
+const URI = 'https://utpitosbackend.onrender.com/users/';
 
 const Login = () => {
     const context = useContext(ShopContext);

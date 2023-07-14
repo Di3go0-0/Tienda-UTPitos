@@ -94,7 +94,7 @@ const updateContent = async (product, quantity) => {
         where: { id: product }  // Actualizamos el stock del producto restando la cantidad especificada
     });
     if (productMinStock[product].stockMin >= (stock[0].dataValues.stock - quantity[product])) {
-        //sendMail({id: product});
+        sendMail({id: product});
     }
 }
 

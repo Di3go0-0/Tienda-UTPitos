@@ -41,7 +41,7 @@ export default function PaymentForm() {
             try {
                 //const { id } = paymentMethod//si n hay error se almacena el if de payment method
                 console.log(context.payAumount)
-                const response = await axios.post("http://localhost:3001/payment", { //se cre una peticion para el pago
+                const response = await axios.post("https://utpitosbackend.onrender.com/payment", { //se cre una peticion para el pago
                     amount: context.payAumount, //con el total de la compra
                     id: paymentMethod.id,
                     description: "Pago por producto"
@@ -73,8 +73,11 @@ export default function PaymentForm() {
                     <button className="pay">Pay</button> {/*boton para pagar  */}
                 </form>
                 :
-                <div>
-                    <h2>succesful purchase</h2>
+                <div className="package">
+                    <h2 className="title">succesful purchase</h2>
+                    <a  href="/shop"> 
+                        <button className="button" type="button">Inicio</button>
+                    </a>
                 </div>
             }
         </>
