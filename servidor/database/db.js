@@ -1,8 +1,9 @@
 import { Sequelize } from 'sequelize';
 
-//Se conecta a la base de datos usando sequlize, con los parametros de esta misma "nombre base de datos" "usuario" "constrasena"
+// Se crea una nueva instancia de Sequelize para conectarse a la base de datos MySQL
 const db = new Sequelize('bysnmbtrbyjbcaad1hqq', 'uhzngho6brgx4eto', 'N67KdhXVETNQmJMzbHSc', {
-    host : 'bysnmbtrbyjbcaad1hqq-mysql.services.clever-cloud.com',
-    dialect:'mysql'
+    host: 'bysnmbtrbyjbcaad1hqq-mysql.services.clever-cloud.com',  // Dirección del host de la base de datos
+    dialect: 'mysql'  // Indicamos que estamos utilizando MySQL como dialecto de la base de datos
 });
-export default db;
+
+export default db;  // Exportamos la instancia de Sequelize para poder utilizarla en otros archivos
