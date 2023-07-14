@@ -1,25 +1,4 @@
-/* Estilos generales */
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Poppins', sans-serif;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  background: url('https://e1.pxfuel.com/desktop-wallpaper/616/918/desktop-wallpaper-deer-digtial-vector-art-forest-vector.jpg') no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-h1 {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 20px;
-  color: #fff;
-}
-
-/* Estilos para EditProduct */
+/* Estilos para la sección EditProduct */
 .shop {
   padding: 20px;
 }
@@ -89,83 +68,110 @@ h1 {
   margin: 10px;
 }
 
-/* Estilos para Product */
+/* Estilos para la sección Product */
 .product {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 250px;
-  height: 400px;
-  background-color: rgba(128, 0, 128, 0.5);
-  border: 2px solid grey;
-  border-radius: 20px;
-  box-shadow: 0 0 30px black;
   padding: 20px;
+  background-color: rgba(128, 0, 128, 0.5);
+  backdrop-filter: blur(5px);
+  border-radius: 8px;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
 }
 
-.product .slide-var {
+.slide-var {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-bottom: 10px;
 }
 
-.product .slide-var ul {
+.slide-var ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-.product .slide-var ul li {
+.slide-var ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-right: 10px;
-}
-
-.product .slide-var ul li img {
   width: 100px;
   height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
 }
 
-.product .description p {
+.slide-var ul li img {
+  width: auto;
+  height: 100%;
+  object-fit: contain;
+}
+
+.description {
+  text-align: center;
   margin-bottom: 10px;
-  font-weight: bold;
   color: #fff;
 }
 
-.product .description form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.description p {
+  margin-bottom: 10px;
 }
 
-.product .description input {
+.description b {
+  font-weight: bold;
+}
+
+.description input[type="text"] {
   width: 100%;
   height: 40px;
-  background: transparent;
-  border: none;
-  outline: none;
-  border-bottom: 2px solid #162938;
-  transition: border-color 0.3s;
-  font-weight: bold;
   padding: 5px;
+  border: 2px solid #162938;
+  border-radius: 8px;
+  font-size: 16px;
   margin-bottom: 10px;
-  color: #fff;
+  background-color: #f1f1f1;
+  transition: border-color 0.3s;
+  color: #000;
 }
 
-.product .description input:focus {
-  border-bottom-color: #59daeb;
-}
-
-.product .description .btn-login {
-  width: 100%;
-  height: 45px;
-  background: #162938;
-  border: none;
+.description input[type="text"]:focus {
   outline: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 1em;
+  border-color: #0597c2;
+}
+
+.description .btn-login {
+  background-color: #162938;
   color: #fff;
+  border: none;
+  border-radius: 4px;
+  height: 40px;
+  font-size: 16px;
   font-weight: bold;
-  margin: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.description .btn-login:hover {
+  background-color: #0597c2;
+}
+
+@media only screen and (max-width: 600px) {
+  .slide-var ul li {
+    width: 60px;
+    height: 60px;
+  }
+
+  .description input[type="text"] {
+    height: 30px;
+  }
+
+  .description .btn-login {
+    height: 30px;
+  }
 }

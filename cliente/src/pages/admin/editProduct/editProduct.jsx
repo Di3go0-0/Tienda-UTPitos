@@ -3,6 +3,7 @@ import { Product } from './Product';
 import axios from 'axios';
 import { useState } from 'react';
 import { useEffect } from 'react';
+import "./editProduct.css"
 
 const URI = 'https://utpitosbackend.onrender.com/products/'; //aqui se hacen las peticiones
 
