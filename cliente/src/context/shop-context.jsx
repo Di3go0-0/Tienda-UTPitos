@@ -67,8 +67,8 @@ export const ShopContextProvider = (props) => {  // Componente proveedor del con
 
     const contextValue = { cartItems, addToCart, removeFromCart, getTotalCartAmount, loggedChanger, logged, AdminChanger, admin, payAumount, setPayAumount };  // Valores y funciones a compartir en el contexto
     return (
-        <ShopContext.Provider value={contextValue}>  // Proveer el valor del contexto
-            {props.children}  // Renderizar los componentes hijos
+        <ShopContext.Provider value={contextValue}>  
+            {props.children} 
         </ShopContext.Provider>
     );
 };
