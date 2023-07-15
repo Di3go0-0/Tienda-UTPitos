@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import axios from 'axios';
 import { useState, useEffect } from "react";
 
-const URI = 'users/'; // Modifica la dirección en la que se realizan las peticiones.
+const URI = 'https://utpitosbackend.onrender.com/users/'; // Modifica la dirección en la que se realizan las peticiones.
 
 const Register = () => {
     const [name, setName] = useState(''); // Modifica el valor del estado "name".
